@@ -2,6 +2,12 @@
 
 Currently this is a cobbling-together of various samples.
 
+The good news: it works in VSCode (with a devcontainers), on GitPod, and in production on Netlify.
+
+The bad news: I can't get format-on-save to work in VSCode. the extension has an error message.
+
+## why
+
 Kent wants to make a poker app, and if you're going to make a web app and have FUN with it,
 you might as well do it in Elm.
 
