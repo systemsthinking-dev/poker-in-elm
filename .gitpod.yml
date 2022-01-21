@@ -5,3 +5,9 @@ tasks:
       npm install && npm run build
   - command: |
       npm start
+vscode:
+  extensions:
+    - "dbaeumer.vscode-eslint"
+    - "hbenl.test-adapter-converter"
+    - "hbenl.vscode-test-explorer"
+    - "elmtooling.elm-ls-vscode"
