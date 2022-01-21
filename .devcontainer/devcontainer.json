@@ -15,7 +15,9 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"dbaeumer.vscode-eslint"
+		"dbaeumer.vscode-eslint",
+		 "hbenl.test-adapter-converter", // prereq for elm
+		 "elmtooling.elm-ls-vscode"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
