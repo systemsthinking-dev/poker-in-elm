@@ -41,6 +41,11 @@ view model =
         , h1 [] [ text "Your Elm App is working!" ]
         ]
 
+documentView : Model -> Browser.Document Msg
+documentView model =
+  { title = "whatever"
+  , body = [ view model ]
+  }
 
 
 ---- PROGRAM ----
@@ -48,8 +53,8 @@ view model =
 
 main : Program () Model Msg
 main =
-    Browser.element
-        { view = view
+    Browser.document
+        { view = documentView
         , init = \_ -> init
         , update = update
         , subscriptions = always Sub.none
