@@ -15,15 +15,19 @@ There's a [devcontainer](https://marketplace.visualstudio.com/items?itemName=ms-
 
 Or, all you really need is node.js and `npm install`.
 
-Develop using `elm reactor`
-
-Build with `npm run build` and find the output in `dist/` (run http-server or something in there if you want)
+Develop using `npm start` which rebuilds on change. (You still need to refresh the page.)
 
 ### online
 
 You can work on [GitPod](https://gitpod.io/#https://github.com/systemsthinking-dev/poker-in-elm) -- this should open a dev env.
 
+When the workspace opens, it tries to run the app. When it asks you whether you'd like to open in a preview or a browser, pick Preview and then it's right there!
+
+Details:
+
 This is configured in `.gitpod.yml` to point to `.devcontainer/Dockerfile`, which in turn is a default Node.js container with elm installed globally for convenience.
+
+I have a prebuild set up on GitPod, which does the container build, npm install, and a build. It automatically runs `npm start` too.
 
 ## Deployment
 
