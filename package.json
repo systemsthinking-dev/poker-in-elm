@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Let me play",
   "scripts": {
-    "build": "elm make src/Main.elm --optimize --output=dist/main.js"
+    "copy-static": "cp public/* dist/",
+    "build-elm": "elm make src/Main.elm --optimize --output=dist/main.js",
+    "build": "npm run copy-static && npm run build-elm"
   },
   "repository": {
     "type": "git",
