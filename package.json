@@ -1,16 +1,15 @@
 {
   "name": "poker-in-elm",
   "version": "1.0.0",
-  "description": "Let me plau",
-  "main": "index.js",
+  "description": "Let me play",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "elm make src/Main.elm"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/systemsthinking-dev/poker-in-elm.git"
   },
-  "author": "",
+  "author": "jessitron",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/systemsthinking-dev/poker-in-elm/issues"
