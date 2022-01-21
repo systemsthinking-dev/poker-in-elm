@@ -58,14 +58,19 @@ update msg model =
 view : Model -> Html Msg
 view model =
     div []
-        [ table []
-            [ tr []
-                [ td [] []
-                , td [] [ text "Pot" ]
-                ]
-            , tr []
-                [ td [] [ text "SB" ]
-                , td [] [ text (String.fromInt model.sb) ]
-                ]
+        [ handToTable model
+        ]
+
+
+handToTable : Model -> Html Msg
+handToTable model =
+    table []
+        [ tr []
+            [ td [] []
+            , td [] [ text "Pot" ]
+            ]
+        , tr []
+            [ td [] [ text "SB" ]
+            , td [] [ text (String.fromInt model.sb) ]
             ]
         ]
