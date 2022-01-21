@@ -17,6 +17,7 @@
 	"extensions": [
 		"dbaeumer.vscode-eslint",
 		 "hbenl.test-adapter-converter", // prereq for something
+		 "hbenl.vscode-test-explorer",
 		 "elmtooling.elm-ls-vscode"
 	],
 
