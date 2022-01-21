@@ -65,7 +65,7 @@ view model =
                 ]
             , tr []
                 [ td [] [ text "SB" ]
-                , td [] [ text "997" ]
+                , td [] [ text (String.fromInt model.sb) ]
                 ]
             ]
         ]
