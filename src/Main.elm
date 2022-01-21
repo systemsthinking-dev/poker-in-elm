@@ -21,15 +21,20 @@ main =
 
 
 -- MODEL
+--
+
+
+type alias Hand =
+    { sb : Int }
 
 
 type alias Model =
-    Int
+    Hand
 
 
 init : Model
 init =
-    0
+    Hand 997
 
 
 
@@ -43,12 +48,7 @@ type Msg
 
 update : Msg -> Model -> Model
 update msg model =
-    case msg of
-        Increment ->
-            model + 1
-
-        Decrement ->
-            model - 1
+    model
 
 
 
@@ -59,10 +59,10 @@ view : Model -> Html Msg
 view model =
     div []
         [ table []
-            [ tr [] [
-                td [] [],
-                td [] [text "Pot"]
-             ]
+            [ tr []
+                [ td [] []
+                , td [] [ text "Pot" ]
+                ]
             , tr []
                 [ td [] [ text "SB" ]
                 , td [] [ text "997" ]
