@@ -8,6 +8,9 @@
     "build-elm": "elm make src/Main.elm --optimize --output=dist/main.js",
     "build": "npm run copy-static && npm run build-elm"
   },
+  "devDependencies": {
+    "elm": "^0.19.1-5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/systemsthinking-dev/poker-in-elm.git"
