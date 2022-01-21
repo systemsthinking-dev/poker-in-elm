@@ -1,5 +1,24 @@
 {
+  "name": "poker-in-elm",
+  "version": "1.0.0",
+  "description": "Let me play",
+  "scripts": {
+    "clean": "rm -r dist/*",
+    "copy-static": "cp public/* dist/",
+    "build-elm": "elm make src/Main.elm --optimize --output=dist/main.js",
+    "build": "npm run copy-static && npm run build-elm"
+  },
   "devDependencies": {
     "elm": "^0.19.1-5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/systemsthinking-dev/poker-in-elm.git"
+  },
+  "author": "jessitron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/systemsthinking-dev/poker-in-elm/issues"
+  },
+  "homepage": "https://github.com/systemsthinking-dev/poker-in-elm#readme"
 }
