@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Let me play",
   "scripts": {
+    "clean": "rm -r dist/*",
     "copy-static": "cp public/* dist/",
     "build-elm": "elm make src/Main.elm --optimize --output=dist/main.js",
     "build": "npm run copy-static && npm run build-elm"
