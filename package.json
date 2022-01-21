@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Let me play",
   "scripts": {
-    "build": "elm make src/Main.elm"
+    "build": "elm make src/Main.elm --optimize --output=dist/main.js"
   },
   "repository": {
     "type": "git",
