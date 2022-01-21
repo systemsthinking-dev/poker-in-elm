@@ -6,10 +6,12 @@
     "clean": "rm -r dist/*",
     "copy-static": "mkdir -p dist/ && cp public/* dist/",
     "build-elm": "elm make src/Main.elm --optimize --output=dist/main.js",
-    "build": "npm run copy-static && npm run build-elm"
+    "build": "npm run copy-static && npm run build-elm",
+    "start": "elm-live src/Main.elm --dir dist -- --output dist/main.js"
   },
   "devDependencies": {
-    "elm": "^0.19.1-5"
+    "elm": "^0.19.1-5",
+    "elm-live": "^4.0.2"
   },
   "repository": {
     "type": "git",
