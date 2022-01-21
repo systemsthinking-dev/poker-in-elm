@@ -34,9 +34,11 @@ type alias Model =
 
 init : Model
 init =
-    Hand 997
+    Hand 1000
 
-
+sbCurrentStack: Hand -> Int
+sbCurrentStack hand = 
+    hand.sb - 3
 
 -- UPDATE
 
@@ -71,6 +73,6 @@ handToTable model =
             ]
         , tr []
             [ td [] [ text "SB" ]
-            , td [] [ text (String.fromInt model.sb) ]
+            , td [] [ text (String.fromInt (sbCurrentStack model)) ]
             ]
         ]
