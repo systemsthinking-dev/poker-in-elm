@@ -13,10 +13,10 @@ FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 # RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
 
 # [Optional] Uncomment if you want to install more global node modules
-# RUN su node -c "npm install -g <your-package-list-here>"
+ RUN su node -c "npm install -g elm"
 
 # install elm
-RUN curl -L -o elm.gz https://github.com/elm/compiler/releases/download/0.19.1/binary-for-linux-64-bit.gz && \
-      gunzip elm.gz && \ 
-      chmod +x elm && \
-      sudo mv elm /usr/local/bin/
+# RUN curl -L -o elm.gz https://github.com/elm/compiler/releases/download/0.19.1/binary-for-linux-64-bit.gz && \
+#       gunzip elm.gz && \ 
+#       chmod +x elm && \
+#       sudo mv elm /usr/local/bin/
